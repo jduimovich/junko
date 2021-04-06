@@ -1,7 +1,6 @@
 # Sample  
 
-name: Junko
-env:    
+name: Junko 
 on: [push, workflow_dispatch]
 jobs:
   junko:
