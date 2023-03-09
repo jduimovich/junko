@@ -3,4 +3,5 @@ for i in {1..5}
 do  
     echo $i
     bash test
+    sleep 5
 done
