@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: junko
+  annotations:
+    github.com/project-slug: jduimovich/junko
+spec:
+  type: other
+  lifecycle: unknown
+  owner: jduimovich
