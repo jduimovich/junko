@@ -19,6 +19,8 @@ pipeline {
                     printf("<%s>\n", contents); 
                     rhtap.info ("------") 
 
+
+                    sh contents 
                     rhtap.info ("TEST RHTAP")
                     rhtap.init() 
                 }
