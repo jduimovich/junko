@@ -13,11 +13,11 @@ pipeline {
                 script { 
                     rhtap.info ("ABOUT TO libraryResource('init.sh')")
                     libraryResource('init.sh')
-                    rhtap.info ("------")")
-                    
+                    rhtap.info ("------")
+
                     rhtap.info ("ABOUT TO libraryResource('doesnotexist.sh')")
                     libraryResource('doesnotexist.sh')
-                    rhtap.info ("------")")
+                    rhtap.info ("------")
 
                     rhtap.info ("TEST RHTAP")
                     rhtap.init() 
