@@ -11,6 +11,7 @@ pipeline {
         stage('init.sh') {
             steps {
                 script { 
+                    libraryResource('init.sh')
                     rhtap.info ("TEST RHTAP")
                     rhtap.init() 
                 }
