@@ -10,8 +10,10 @@ pipeline {
     stages { 
         stage('init.sh') {
             steps {
-                rhtap.info ("TEST RHTAP")
-                rhtap.init() 
+                script { 
+                    rhtap.info ("TEST RHTAP")
+                    rhtap.init() 
+                }
             }
         }
     }
