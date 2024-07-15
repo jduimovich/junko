@@ -11,16 +11,6 @@ pipeline {
         stage('init.sh') {
             steps {
                 script { 
-                    rhtap.info ("ABOUT TO libraryResource('init.sh')")
-                    contents = libraryResource('init.sh')
-                    rhtap.info ("------") 
-                    
-                    rhtap.info ("PRINT libraryResource('init.sh')")
-                    printf("<%s>\n", contents); 
-                    rhtap.info ("------") 
-
-
-                    sh contents 
                     rhtap.info ("TEST RHTAP")
                     rhtap.init() 
                 }
