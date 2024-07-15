@@ -1,5 +1,5 @@
-pipeline { 
-    @Library('RHTAP_Jenkins')
+@Library('RHTAP_Jenkins')
+pipeline {  
     agent any
     environment {
         ROX_API_TOKEN  = credentials('ROX_API_TOKEN')
@@ -10,7 +10,8 @@ pipeline {
     stages { 
         stage('init.sh') {
             steps {
-                init() 
+                rhtap.info ("TEST RHTAP")
+                rhtap.init() 
             }
         }
     }
