@@ -12,12 +12,12 @@ pipeline {
             steps {
                 script { 
                     rhtap.info ("ABOUT TO libraryResource('init.sh')")
-                    libraryResource('init.sh')
-                    rhtap.info ("------")
-
-                    rhtap.info ("ABOUT TO libraryResource('doesnotexist.sh')")
-                    libraryResource('doesnotexist.sh')
-                    rhtap.info ("------")
+                    contents = libraryResource('init.sh')
+                    rhtap.info ("------") 
+                    
+                    rhtap.info ("PRINT libraryResource('init.sh')")
+                    printf("<%s>\n", contents); 
+                    rhtap.info ("------") 
 
                     rhtap.info ("TEST RHTAP")
                     rhtap.init() 
